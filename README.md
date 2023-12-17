@@ -83,7 +83,7 @@ On effectue une mutation en inversant l'ordre d'une séquence de gènes dans le 
 
 On effectue une mutation en insérant un gène à un nouvel emplacement dans le parcours.  
 
-**L'ensemble des tests que j'ai réalisé se trouvent dans le notebook du répertoire "exploratory.ipynb". J'ai également testé l'algorithme de Dijkstra *(C'est un algorithme utilisé en informatique pour trouver le plus court chemin entre deux nœuds dans un graphe pondéré.*) afin de comparer mes résultats obtenus avec mon algorithme génétique.**  
+**L'ensemble des tests que j'ai réalisé se trouvent dans le notebook du répertoire "exploratory.ipynb". J'ai également testé l'algorithme de Dijkstra** *(C'est un algorithme utilisé en informatique pour trouver le plus court chemin entre deux nœuds dans un graphe pondéré.*) **afin de comparer mes résultats obtenus avec mon algorithme génétique.**  
 
 
 
