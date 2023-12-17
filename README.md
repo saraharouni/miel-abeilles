@@ -115,7 +115,12 @@ La meilleure combinaison retenue est celle-ci:
 
 ## Arbre généalogique:  
 
-![graphique_arbre](graph_arbre.png)
+![graphique_arbre](graph_arbre.png)  
+
+## Meilleur parcours:  
+
+![best_parcours](graph_best_parcours.png)  
+
 
   
 
