@@ -44,8 +44,10 @@ $$ \text{Distance Euclidienne} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
 Il existe plus techniques de sélection, de croisement et de mutation. Pour ce projet, j'ai décidé de tester plusieurs de ces techniques et de les comparer afin de trouver la combinaisons optimale qui va le permettre d'obtenir le fitness score le plus bas. Après avoir sélectionné, la combinaison optimale, j'ai testé différent taux de mutation puis augmenté le nombre de génération jusqu'à arrivé à stagnation de mon modèle.  
 
 **Méthodes de Sélection :**  
+
 **Sélection par fitness score :**  
-On sélectionne les meilleurs individus de la population en fonction de leur score de fitness.
+
+On sélectionne les meilleurs individus de la population en fonction de leur score de fitness.  
 
 **Tournoi :**  
 Organise un tournoi parmi un certain nombre d'individus choisis au hasard et on sélectionne le gagnant en fonction de son fitness score.
@@ -69,6 +71,8 @@ Méthode Utilisée : Crossover avec deux points de coupure définis de manière 
 ![image_croisement_2](https://i0.wp.com/ledatascientist.com/wp-content/uploads/2020/10/Two-point-XO.png?resize=768%2C209&ssl=1)  
 
 **Méthodes de Mutation :**  
+
+La méthode de mutation ne s'enclenchera dans le code que lorsque le fitness score stagnera sur 50 générations.  
 
 **Swap :**  
 
@@ -95,6 +99,16 @@ On effectue une mutation en insérant un gène à un nouvel emplacement dans le 
 
 **L'ensemble des tests que j'ai réalisé se trouvent dans le notebook du répertoire "exploratory.ipynb". J'ai également testé l'algorithme de Dijkstra** *(C'est un algorithme utilisé en informatique pour trouver le plus court chemin entre deux nœuds dans un graphe pondéré.*) **afin de comparer mes résultats obtenus avec mon algorithme génétique.**  
 
+
+**Conclusion :**  
+
+La meilleure combinaison retenue est celle-ci:  
+* Sélection : **Tournoi**
+* Croisement : **Croisement en un point**
+* Mutation : **Inversion**
+* Taux de mutation : **0.07%**
+* Fitness_score : **6679.80 sur 600 générations.**
+  
 
 
 
