@@ -32,3 +32,14 @@ if __name__ == "__main__":
     # Création et affichage de l'arbre généalogique
     plot_genealogy(parents_ids, best_abeille_id,generations=5)
     plt.show()
+    
+    # Afficher le parcours de l'abeille
+    chemin_x = np.append(df['x'][best_parcours], df['x'][best_parcours])
+    chemin_y = np.append(df['y'][best_parcours], df['y'][best_parcours])
+    plt.plot(chemin_x, chemin_y, 'o-g', label='Parcours d\'abeille')
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title('Parcours d\'une abeille ')
+    plt.legend()
+    plt.show()
+    
