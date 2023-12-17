@@ -8,8 +8,10 @@ Nous avons une ruche constituée de 101 abeilles (100 abeilles et leur reine). A
 **Sujet:**  
 Concevoir un algorithme génétique afin de pouvoir créer au fil de génération des abeilles capablent de trouver le chemin le plus court pour parcourir les 50 fleurs. 
 
-**Qu'est-ce qu'un algorithme génétique?** 
-**Définition**
+**Qu'est-ce qu'un algorithme génétique?**  
+
+**Définition**  
+
 Il s'agit d'un algorithme s'inspirant de la théorie de Darwin sur l'évolution des espèces qui repose sur trois principes :  
 * **le principe de variation :** Chaque individu au sein d’une population est unique. Ces différences, plus ou moins importantes, vont être décisives dans le processus de sélection. 
 * **le principe d'adaptation :** Les individus les plus adaptés à leur environnement atteignent plus facilement l'âge adulte. Ceux ayant une meilleure capacité de survie pourront donc se reproduire davantage.  
@@ -17,7 +19,8 @@ Il s'agit d'un algorithme s'inspirant de la théorie de Darwin sur l'évolution 
 *(https://igm.univ-mlv.fr/~dr/XPOSE2013/tleroux_genetic_algorithm/fonctionnement.html)*
 
 **Algorithme génétique et Data Science**  
-En data science, cet algorithme va être utilisé dans des cas d'optimisation de modèles, de sélection de fonctionnalités, ou de la calibration de paramètres pour améliorer les performances des modèles. Ces algorithmes reposent sur des concepts tels que la création d'une populations, la reproduction par croisement, la mutation, et la sélection basée sur la qualité des performances.  
+En data science, cet algorithme va être utilisé dans des cas d'optimisation de modèles, de sélection de fonctionnalités, ou de la calibration de paramètres pour améliorer les performances des modèles.  
+Ces algorithmes reposent sur des concepts tels que la création d'une populations, la reproduction par croisement, la mutation, et la sélection basée sur la qualité des performances.  
 
 Il s'agit une approche heuristique *(c'est une stratégie pratique qui vise à trouver des solutions satisfaisantes dans des situations où la recherche de la solution optimale pourrait être difficile ou coûteuse en termes de temps de calcul)* pour résoudre des problèmes complexes d'optimisation et de recherche. 
 
@@ -30,6 +33,13 @@ Comme nous le montre ce schéma, l'algorithme repose sur trois étapes:
 
 Pour ce projet, l'évaluation de la qualité d'une abeille va reposer sur son fitness score. Dans notre cas, le fitness score représente la distance totale parcourue par chaque abeille pour traverser les 50 fleurs.
 Plus la valeur du fitness score sera basse, meilleure sera l'abeille.  
+
+Pour calculer la distance entre chaque fleur et partant du principe qu'elles sont représentées par des coordonnées (x,y), j'ai choisi d'utiliser la distance euclidienne.  
+
+La formule de la distance euclidienne entre deux points \( (x_1, y_1) \) et \( (x_2, y_2) \) est donnée par :
+
+$$ \text{Distance Euclidienne} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$  
+
 
 Il existe plus techniques de sélection, de croisement et de mutation. Pour ce projet, j'ai décidé de tester plusieurs de ces techniques et de les comparer afin de trouver la combinaisons optimale qui va le permettre d'obtenir le fitness score le plus bas. Après avoir sélectionné, la combinaison optimale, j'ai testé différent taux de mutation puis augmenté le nombre de génération jusqu'à arrivé à stagnation de mon modèle.  
 
