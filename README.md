@@ -108,6 +108,15 @@ La meilleure combinaison retenue est celle-ci:
 * Mutation : **Inversion**
 * Taux de mutation : **0.07%**
 * Fitness_score : **6679.80 sur 600 générations.**
+
+## Fitness Score par génération :  
+
+![graphique_fitness_score](graph_fitness.png)  
+
+## Arbre généalogique:  
+
+![graphique_arbre](graph_arbre.png)
+
   
 
 
